@@ -25,7 +25,7 @@ function reducer(state = initialState, action) {
 
 const store = customCreateStore(reducer, __REDUX_DEVTOOLS_EXTENSION__());
 
-store.subscribe(() => {
+const unsubs = store.subscribe(() => {
   console.log(store.getState());
   postCount.innerText = store.getState().post;
 });
@@ -34,6 +34,7 @@ postCount.innerText = store.getState().post;
 
 store.dispatch({ type: "post/increment" });
 store.dispatch({ type: "post/decrement" });
+unsubs()
 store.dispatch({ type: "post/incrementBy", payload: 7 });
 
 incBttn.addEventListener("click", () => {
