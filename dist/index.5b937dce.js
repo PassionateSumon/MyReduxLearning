@@ -585,31 +585,39 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"5Th6M":[function(require,module,exports) {
 var _redux = require("redux");
+const postCount = document.querySelector(".post-count");
+const incBttn = document.querySelector(".btn1");
+const decBttn = document.querySelector(".btn2");
 const initialState = {
     post: 1,
     name: "Sumon Mitra",
     age: 22
 };
 function reducer(state = initialState, action) {
-    if (action.type === "post/increment") return {
-        ...state,
-        post: state.post + 1
-    };
-    else if (action.type === "post/decrement") return {
-        ...state,
-        post: state.post - 1
-    };
-    else if (action.type === "post/incrementBy") return {
-        ...state,
-        post: state.post + action.payload
-    };
+    switch(action.type){
+        case "post/increment":
+            return {
+                ...state,
+                post: state.post + 1
+            };
+        case "post/decrement":
+            return {
+                ...state,
+                post: state.post - 1
+            };
+        case "post/incrementBy":
+            return {
+                ...state,
+                post: state.post + action.payload
+            };
+    }
     return state;
 }
-const store = (0, _redux.createStore)(reducer);
-console.log(store);
+const store = (0, _redux.createStore)(reducer, __REDUX_DEVTOOLS_EXTENSION__());
 store.subscribe(()=>{
-    console.log(store.getState());
+    postCount.innerText = store.getState().post;
 });
+postCount.innerText = store.getState().post;
 store.dispatch({
     type: "post/increment"
 });
@@ -619,6 +627,17 @@ store.dispatch({
 store.dispatch({
     type: "post/incrementBy",
     payload: 7
+});
+incBttn.addEventListener("click", ()=>{
+    store.dispatch({
+        type: "post/incrementBy",
+        payload: 7
+    });
+});
+decBttn.addEventListener("click", ()=>{
+    store.dispatch({
+        type: "post/decrement"
+    });
 });
 
 },{"redux":"anWnS"}],"anWnS":[function(require,module,exports) {
