@@ -1,4 +1,5 @@
 import { createStore } from "redux";
+import { customCreateStore } from "./myCustomRedux";
 
 const postCount = document.querySelector(".post-count");
 const incBttn = document.querySelector(".btn1");
@@ -22,8 +23,10 @@ function reducer(state = initialState, action) {
   return state;
 }
 
-const store = createStore(reducer, __REDUX_DEVTOOLS_EXTENSION__());
+const store = customCreateStore(reducer, __REDUX_DEVTOOLS_EXTENSION__());
+
 store.subscribe(() => {
+  console.log(store.getState());
   postCount.innerText = store.getState().post;
 });
 
@@ -37,5 +40,5 @@ incBttn.addEventListener("click", () => {
   store.dispatch({ type: "post/incrementBy", payload: 7 });
 });
 decBttn.addEventListener("click", () => {
-    store.dispatch({ type: "post/decrement"});
-  });
+  store.dispatch({ type: "post/decrement" });
+});

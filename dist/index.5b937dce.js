@@ -585,6 +585,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"5Th6M":[function(require,module,exports) {
 var _redux = require("redux");
+var _myCustomRedux = require("./myCustomRedux");
 const postCount = document.querySelector(".post-count");
 const incBttn = document.querySelector(".btn1");
 const decBttn = document.querySelector(".btn2");
@@ -613,8 +614,9 @@ function reducer(state = initialState, action) {
     }
     return state;
 }
-const store = (0, _redux.createStore)(reducer, __REDUX_DEVTOOLS_EXTENSION__());
+const store = (0, _myCustomRedux.customCreateStore)(reducer, __REDUX_DEVTOOLS_EXTENSION__());
 store.subscribe(()=>{
+    console.log(store.getState());
     postCount.innerText = store.getState().post;
 });
 postCount.innerText = store.getState().post;
@@ -640,7 +642,7 @@ decBttn.addEventListener("click", ()=>{
     });
 });
 
-},{"redux":"anWnS"}],"anWnS":[function(require,module,exports) {
+},{"redux":"anWnS","./myCustomRedux":"cu2X9"}],"anWnS":[function(require,module,exports) {
 // src/utils/formatProdErrorMessage.ts
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -978,6 +980,31 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["5K16H","5Th6M"], "5Th6M", "parcelRequire94c2")
+},{}],"cu2X9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "customCreateStore", ()=>customCreateStore);
+function customCreateStore(reducer) {
+    let state;
+    const elements = [];
+    const store = {
+        getState () {
+            return state;
+        },
+        dispatch (action) {
+            state = reducer(state, action);
+            elements.forEach((eleListener)=>{
+                eleListener();
+            });
+        },
+        subscribe (listener) {
+            elements.push(listener);
+        }
+    };
+    store.dispatch("@@INIT");
+    return store;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"bNLEA"}]},["5K16H","5Th6M"], "5Th6M", "parcelRequire94c2")
 
 //# sourceMappingURL=index.5b937dce.js.map
