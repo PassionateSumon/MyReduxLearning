@@ -1,9 +1,9 @@
 55
-56C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\prac.js133618264575618665 0
+56C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\prac.js133622469286206717 0
 92C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\src\utils\actionTypes.ts133606954658121988 0
 59C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\index.html133610362568468464 0
-63C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\cartReducer.js133618264246702576 0
-53C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist133618264575845113 1
+63C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\cartReducer.js133622468305437429 0
+53C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist133622469201381640 1
 92C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\dist\redux.legacy-esm.js133606954657184465 0
 89C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\src\utils\isAction.ts133606954658283464 0
 61C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules133606954658848680 1
@@ -18,7 +18,7 @@
 71C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\Redux.3464ddca.js133606955001645480 0
 75C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\index.8c3625b0.js.map133606955001718864 0
 86C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\src\createStore.ts133606954658283464 0
-67C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\wishListReducer.js133618262685813819 0
+67C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\wishListReducer.js133622468229543229 0
 98C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\src\utils\symbol-observable.ts133606954658689632 0
 67C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux133606954658121988 1
 72C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\dist133606954658416333 1
@@ -33,7 +33,7 @@
 93C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\src\bindActionCreators.ts133606954658121988 0
 75C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\index.2ae39824.js.map133607761085853590 0
 90C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\src\combineReducers.ts133606954658121988 0
-75C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\index.5b937dce.js.map133618264575830387 0
+75C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\index.5b937dce.js.map133622469201381640 0
 77C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\src\types133606954658449118 1
 88C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\src\types\actions.ts133606954658121988 0
 77C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\src\utils133606954658713395 1
@@ -52,5 +52,5 @@
 86C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\node_modules\redux\dist\cjs\redux.cjs133606954657184465 0
 71C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\index.2ae39824.js133607761085739663 0
 75C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\Redux.3464ddca.js.map133606955001718864 0
-64C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\index.html133618262306301102 0
-71C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\index.5b937dce.js133618264575812137 0
+64C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\index.html133622469182911994 0
+71C:\Users\SUMON\Desktop\AlgoZenith_FrontEnd\Redux\dist\index.5b937dce.js133622469201340252 0

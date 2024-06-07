@@ -1,6 +1,16 @@
-export const WISHLIST_ADD_ITEMS = "wishList/addItem";
-export const WISHLIST_REMOVE_ITEMS = "wishList/removeItem";
+// Action Types
+const WISHLIST_ADD_ITEMS = "wishList/addItem";
+const WISHLIST_REMOVE_ITEMS = "wishList/removeItem";
 
+// Action creator
+export function addWishListItem(productId, quantity = 1) {
+  return { type: WISHLIST_ADD_ITEMS, payload: { productId } };
+}
+export function removeWishListItem(productId) {
+  return { type: WISHLIST_REMOVE_ITEMS, payload: { productId } };
+}
+
+// Reducer
 export default function wishListReducer(state = [], action) {
   switch (action.type) {
     case WISHLIST_ADD_ITEMS:
